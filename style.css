@@ -1,0 +1,71 @@
+html {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Shippori Mincho', serif;
+}
+
+body {
+    background: rgb(244, 168, 234);
+    background: -moz-linear-gradient(90deg, rgba(244,168,234,1) 0%, rgba(0,217,246,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(244,168,234,1) 0%, rgba(0,217,246,1) 100%);
+    background: linear-gradient(90deg, rgba(244,168,234,1) 0%, rgb(0, 217, 246) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4a8c8",endColorstr="#006df6",GradientType=1);
+}
+
+h1 {
+    font-family: 'Shippori Mincho', serif;
+    background-color: white;
+}
+
+.container {
+    background: #fff;
+    background-image: url(assets/vipkazashka.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    font-family: 'Shippori Mincho', serif;
+}
+
+
+hr {
+    margin-left: 0;
+    width: 80px;
+    background: #000;
+}
+
+div.name_s {
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+div.start {
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+div.age {
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+div.reputation {
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+div.skill {
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+div.education {
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+div.networth{
+    background-color: #fff;
+    opacity: 0.8;
+}
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Kelin/KeuBala calculator</title>
+  </head>
+  <body>
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h1 class="text-center">Kelin/KeuBala calculator</h1>
+                  <form>
+                    <div class="name_s">
+                      <label for="name_s"> Name of kelin/keubala: </label>
+                      <br>
+                      <input type="text" id="name_s" name="name_s">
+                    </div>
+                    <hr>
+                    <div class="start">
+                      <label for="startingbid"> Starting bid for kelin/keubala: </label>
+                      <br>
+                      <input type="number" id="startbid" name="startbid" min="1">
+                    </div>
+                    <hr>
+                    <div class="education">
+                    <label for="education_level">Education level:</label><br>
+                    <select id="education">
+                        <option value="1"></option>
+                        <option value="1.5" id="bachelor">Bachelor's degree</option>
+                        <option value="1.2" id="college">College degree</option>
+                        <option value="1.05" id="highschool">High school degree</option>
+                        <option value="0.9" id="middleschool">Middle school degree</option>
+                    </select>
+                    </div>
+                    <hr>
+                    <div class="networth">
+                    <label for="family_networth">Family networth:</label><br>
+                    <select id="networth">
+                        <option value="1"></option>
+                        <option value="2" id="rich">More than 100,000$</option>
+                        <option value="1.5" id="normal">Between 50,000$ and 100,000$</option>
+                        <option value="1.2" id="poor">Less than 50,000$</option>
+                    </select>
+                    </div>
+                    <hr>
+                    <div class="skill">
+                    <p>Skills:</p>
+                    <form>
+                      <input type="checkbox" class = "skills" value="100">
+                      <label> Can play dombyra </label><br>
+                      <input type="checkbox" class = "skills" value="200">
+                      <label> Can cook good</label><br>
+                      <input type="checkbox" class = "skills" value="150">
+                      <label> Has easygoing character </label><br>
+                      <input type="checkbox" class = "skills" value="100">
+                      <label> Can sing good </label><br>
+                    </form>
+                    </div>
+                    <hr>
+                    <div class="age">
+                    <form> 
+                      <p>Age:</p>
+                      <input type="radio" name="age1" class = "age" value="1.5">
+                      <label>Between 18-23</label><br>
+                      <input type="radio" name="age1" class = "age" value="1.2">
+                      <label>Between 24-27</label><br>
+                      <input type="radio" name="age1"class = "age" value="0.95">
+                      <label>28+</label><br>
+                      </form>
+                    </div>
+                    <hr>
+                    <div class="reputation">
+                    <p>Reputation:</p>
+                    <form>
+                      <input type="checkbox" class = "reputation" value="0.85">
+                      <label> Gossips about his/her parent's attitude </label><br>
+                      <input type="checkbox" class = "reputation" value="0.9">
+                      <label> Gossips about his/her character </label><br>
+                      <input type="checkbox" class = "reputation" value="-200">
+                      <label>  General gossips around his/her person </label><br>
+                    </form>
+                    </div>
+                    <hr>
+                    <div class="loveletter">
+                      <label> Write your love letter here:</label>
+                      <br>
+                      <textarea id="loveletter" rows="5" cols="50" maxlength="500">
+                        Your love letter...
+                      </textarea>
+                    </div>
+                    <hr>
+                  </form>
+                
+                <button id="submit" type="button" class="btn btn-primary" >Calculate price</button>
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  
+  </body>
+</html>
